@@ -1,1 +1,15 @@
 
+# macOS: Finder-instellingen per map
+.DS_Store
+
+# WebStorm: je persoonlijke editorinstellingen
+.idea/
+
+# npm-pakketten: die haal je terug met npm install
+node_modules/
+
+# Logbestanden
+*.log
+
+# Geheime gegevens, zoals API-sleutels (vanaf week 6 relevant)
+.env
