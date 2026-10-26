@@ -1,0 +1,117 @@
+
+.form {
+	max-width: rem(1200);
+	margin: 4rem 0;
+	background: transparent;
+
+	&__section {
+		width: 50%;
+
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+
+		&--flex {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4rem;
+			width: 100%;
+			@media (max-width: 768px) {
+				gap: 1rem;
+			}
+
+			> div {
+				width: calc(50% - 3rem);
+
+				@media (max-width: 768px) {
+					width: calc(100% - 2rem);
+				}
+			}
+		}
+	}
+
+	label, legend {
+		display: block;
+		font-weight: $semibold;
+		margin-bottom: 0.5rem;
+	}
+
+	textarea {
+		width: calc(100% - 2rem);
+		padding: 1rem;
+		border: 1px solid var(--gray);
+		border-radius: 1rem;
+		font-size: 1rem;
+		background-color: var(--white);
+		margin-bottom: 0.5rem;
+		@include transition(border .2s ease-in-out);
+	}
+
+	input[type="text"],
+	select {
+		width: 100%;
+		padding: 1rem;
+		border: 1px solid var(--gray);
+		border-radius: 1rem;
+		font-size: 1rem;
+		background-color: var(--white);
+		margin-bottom: 0.5rem;
+		@include transition(border .2s ease-in-out);
+	}
+
+	input[type="text"]:focus,
+	select:focus,
+	textarea:focus {
+		border-color: var(--main-color);
+		outline: 1px solid var(--main-color);
+		@include transition(border .2s ease-in-out);
+	}
+
+	input[type="text"].error,
+	select.error,
+	textarea.error {
+		border-color: var(--main-color);
+
+	}
+
+	.form-help,
+	.error-message {
+		color: var(--main-color);
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		font-weight: $bold;
+		line-height: 1.6;
+		display: block;
+	}
+
+	fieldset {
+		border: none;
+		margin: 1.5rem 0 0.5rem 0;
+		padding: 0;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"] {
+		accent-color: var(--main-color);
+		@include square(1rem);
+		position: relative;
+		bottom: 3px;
+
+		+ label {
+			font-weight: $regular;
+			@media ( max-width: 450px) {
+			
+			max-width: rem(300);
+			}
+		}
+	}
+
+	& h3 {
+		color: var(--main-color);
+		display: none;
+	}
+}
+
+
+
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+html {
+	font-family: "Open Sans", sans-serif;
+	font-size: var(--one-rem);
+	color: var(--black);
+	font-weight: $regular;
+	line-height: var(--line-height);
+	word-break: break-word;
+	-webkit-font-smoothing: antialiased;
+	font-smooth: always;
+	font-feature-settings: "liga" 0;
+	@media (max-width: 768px) {
+		font-size: 16px;
+	}
+}
+
+h1, h2 {
+	font-weight: $extrabold;
+	color: var(--main-color);
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 3rem;
+	color: var(--main-color);
+	@media (max-width: 952px) {
+		font-size: 2.25rem;
+	}
+}
+
+h2 {
+	font-size: 1.66rem;
+	margin-bottom: 1rem;
+	@media (max-width: 952px) {
+		font-size: 1.5rem;
+	}
+}
+
+p {
+	margin: .5rem 0;
+	max-width: rem(768);
+
+	.intro {
+		font-size: rem(22);
+
+		@media (max-width: 1200px) {
+			font-size: 1rem;
+		}
+	}
+
+	&[role="doc-subtitle"] {
+		font-size: rem(28);
+		position: relative;
+		top: 1rem;
+	}
+}
+
+
