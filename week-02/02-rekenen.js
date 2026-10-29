@@ -12,3 +12,4 @@ console.log((0.1 + 0.2).toFixed(2)); //52
 
 console.log(Number("12,5"));
 console.log(typeof Number("12,5"));
+
